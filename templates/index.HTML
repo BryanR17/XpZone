@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/1.png" type="image/x-png">
+    <title>Xp Zone - Home </title>
+    <link rel="stylesheet" href="/static/CSS/index.CSS">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--================= Corpo ================-->
+    <main>
+        <div class="menus">
+            <nav class="menu-lateral">
+                <ul>
+                    <div class="btn-expandir">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <li class="item-menu">
+                        <a href="{{ url_for('index') }}">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="{{ url_for('dashboard') }}">   
+                            <span class="icon"><i class="bi bi-layout-wtf"></i></span>
+                            <span class="text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="{{ url_for('vendas') }}">
+                            <span class="icon"><i class="bi bi-cart-check"></i></span>
+                            <span class="text">Vendas</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="{{ url_for('produtos') }}">
+                            <span class="icon"><i class="bi bi-basket2"></i></span>
+                            <span class="text">Produtos e Serviços</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="{{ url_for('clientes') }}">
+                            <span class="icon"><i class="bi bi-person-check"></i></span>
+                            <span class="text">Clientes</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="{{ url_for('vendedores') }}">
+                            <span class="icon"><i class="bi bi-person-plus"></i></span>
+                            <span class="text">Vendedores</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--================= Conteudo da tela ================-->
+            <div class="container">
+                <div class="imagem">
+                    <img src="/static/images/2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--================= Rodape ================-->
+    <footer>
+        <div class="txt-rodape">
+            <div class="grupo">
+                <h2 class="titulo-rodape">Desenvolvedores</h2>
+                <h2>Bryan Rodrigues Martins</h2>
+                <h2>Davi Matias Silva</h2>
+                <h2>Ítalo Alves Espíndula</h2>
+                <h2>João Vitor Dias Gonçalves</h2>
+                <h2>Samarha Oliveira Freitas</h2>
+            </div>
+            <div class="grupo">
+                <h2 class="titulo-rodape">Tecnologias</h2>
+                <h2>Python (Back-end)</h2>
+                <h2>Framewoks (Pandas, Plotly, Dash)</h2>
+                <h2>HTML e CSS</h2>
+                <h2>MySQL Workbench</h2>
+            </div>
+            <div class="grupo">
+                <h2 class="titulo-rodape">Detalhes</h2>
+                <h2>Os dados utilizados para o desenvolvimento <br> deste site são totalmente ficticiosos.</h2>
+                
+            </div>
+        </div>
+        <div class="rodape">
+            <p>&copy; 2025 XP Zone - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

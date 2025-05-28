@@ -1,0 +1,290 @@
+.imagens{
+    height: 15%;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+}
+.imagens .centr-icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.imagens .centr-icon > i{
+    font-size: 80px;
+    color: #35494d;
+    margin-top: 30px;
+}
+.imagens .centr-img{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.imagens .centr-img > img{
+    margin-top: 10px;
+    width: 330px;
+    height: 80px;
+}
+.container > h1{
+    width: 500px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+    
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 50px;
+    color: #35494d;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inp-cliente{
+    width: 500px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278;
+}
+.container .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .formulario .inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .formulario .inputs .se-estado{
+    width: 250px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278
+}
+.container .formulario .inputs .inp-cliente{
+    width: 500px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278;
+}
+.container .formulario .btn-cadastrar{
+    width: 230px;
+    height: 40px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    background-color: #35494d;
+    color: #b2bec0;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+/*Inputs somente para produtos e serviços INICIO*/
+.container .formulario .conj-inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .formulario .conj-inp .inp-produto{
+    width: 400px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278;
+}
+.container .formulario .conj-inp .inp-valor{
+    width: 200px;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278;
+}
+.container .formulario .btn-cadastrar .text{
+    transition: .3s ease-in-out;
+}
+.container .formulario .btn-cadastrar .icon{
+   font-size: 30px;
+   position: absolute;
+   transform: scale(0);
+   transition: .3s ease-in-out;
+}
+.container .formulario .btn-cadastrar:hover{
+    background-color: transparent;
+    color: #35494d;
+    border: 2px solid #35494d;
+    transition: .3s ease-in-out;
+}
+.container .formulario .btn-cadastrar:hover .icon{
+    transform: scale(1);
+}
+.container .formulario .btn-cadastrar:hover .text{
+    transform: scale(0);
+}
+.tabela{/*TABELA INICIO*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(50%, 0%);
+    width: 50%;
+}
+.scroll{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 40px;
+} 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    scrollbar-width: thin;
+
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+}
+table thead th{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+th, td {
+    border: 1px solid #b2bec0;
+    text-align: center;
+}
+td {
+    background-color: #587278;
+    color: #b2bec0;
+    padding: 5px 10px 5px 10px;
+}
+th { /*TABELA FIM*/
+    background-color: #35494d;
+    color: #b2bec0;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+    
+}
+.mensagem-sucesso {
+    position: fixed;
+    top: 20px;
+    left: 55%;
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: #35494d;
+    color: #b2bec0;
+    padding: 20px 40px;
+    border: 1px solid #587278;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    pointer-events: none;
+    text-align: center;
+}
+.mensagem-sucesso.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.img-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.img-mensagem {
+    width: auto;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+.texto-mensagem {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 12px;
+}
+.texto-mensagem > i{
+    font-size: 30px;
+}
+.acoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-excluir{
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    background-color: #b22b2b;
+    color: #b2bec0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.btn-excluir:hover{
+    background-color: #b2bec0;
+    color: #b22b2b;
+    border: 2px solid #b22b2b;
+    transition: .3s ease-in-out;
+}

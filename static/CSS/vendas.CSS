@@ -1,0 +1,58 @@
+input{
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278;
+}
+.inp-produto2{
+    width: 550px;
+    height: 40px;
+}
+.inp-desconto{
+    width: 200px;
+    height: 40px;
+}
+.inp-vendedor{
+    width: 380px;
+    height: 40px;
+}
+.inp-cliente2{
+    width: 380px;
+    height: 40px;
+}
+.inp-departamento{
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    border: 0;
+    border-bottom: 2px solid #587278;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #587278;
+}
+.inp-data{
+    width: 250px;
+    height: 40px;
+}
+.bi-percent{
+    font-size: 25px;
+    color: #35494d;
+    position: absolute;
+    top: 330px;
+    right: 430px;
+}
+.tabela{/*TABELA INICIO*/
+    width: 85%;
+    transform: translate(10%, 0%);
+}
